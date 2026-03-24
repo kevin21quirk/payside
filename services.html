@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - PaySide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="services-page">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="520x160logo.png" alt="PaySide Solutions" class="logo-img">
+            </div>
+            <div class="hamburger-wrapper" id="hamburgerMenu">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu-text">MENU</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="side-menu-categories">
+                <h2>Categories</h2>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="side-menu-nav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="services.html" class="active"><i class="fas fa-briefcase"></i> Services</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Professional payroll umbrella solutions for contractors and agencies</p>
+        </div>
+    </section>
+
+    <section class="services-detail">
+        <div class="container">
+            <div id="umbrella-payroll" class="service-detail-card animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80" alt="Payroll Processing" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Umbrella Payroll Services</h2>
+                    <p>Complete payroll management for contractors working through agencies. We handle PAYE, National Insurance, and ensure you receive your payments on time, every time.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Weekly or monthly payroll processing</li>
+                        <li><i class="fas fa-check"></i> PAYE and NI calculations</li>
+                        <li><i class="fas fa-check"></i> Fast payment processing</li>
+                        <li><i class="fas fa-check"></i> Online payslip access</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="tax-compliance" class="service-detail-card reverse animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" alt="Tax Compliance" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Tax Filing & Compliance</h2>
+                    <p>We ensure full HMRC compliance with accurate tax calculations and timely submissions. Our experts handle all tax-related matters so you don't have to worry.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HMRC RTI submissions</li>
+                        <li><i class="fas fa-check"></i> P60 and P45 processing</li>
+                        <li><i class="fas fa-check"></i> Self-assessment support</li>
+                        <li><i class="fas fa-check"></i> Tax code management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="expense-management" class="service-detail-card animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Employee Benefits" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Expense Management</h2>
+                    <p>Claim your business expenses easily and get reimbursed quickly. We process expense claims efficiently and ensure you maximize your allowable deductions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Easy expense submission</li>
+                        <li><i class="fas fa-check"></i> Mileage tracking</li>
+                        <li><i class="fas fa-check"></i> Receipt management</li>
+                        <li><i class="fas fa-check"></i> Fast reimbursement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="timesheet-processing" class="service-detail-card reverse animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Time & Attendance" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Timesheet Processing</h2>
+                    <p>Submit your timesheets online and we'll process them quickly. Our streamlined system ensures accurate payments based on your worked hours.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Online timesheet submission</li>
+                        <li><i class="fas fa-check"></i> Automated approval workflow</li>
+                        <li><i class="fas fa-check"></i> Holiday tracking</li>
+                        <li><i class="fas fa-check"></i> Overtime calculations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="pension-administration" class="service-detail-card animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Analytics & Reporting" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Pension Administration</h2>
+                    <p>We manage your workplace pension contributions in compliance with auto-enrollment regulations. Secure your financial future with our pension services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Auto-enrollment compliance</li>
+                        <li><i class="fas fa-check"></i> Contribution management</li>
+                        <li><i class="fas fa-check"></i> Pension provider liaison</li>
+                        <li><i class="fas fa-check"></i> Annual statements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="dedicated-support" class="service-detail-card reverse animate-on-scroll">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="HR Integration" loading="lazy">
+                    <div class="service-overlay">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Dedicated Support</h2>
+                    <p>Our experienced team provides personalized support whenever you need it. Get quick responses to your queries and expert guidance on all payroll matters.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 2-4 hour response time</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Phone and email support</li>
+                        <li><i class="fas fa-check"></i> Expert payroll advice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Simplify Your Payroll?</h2>
+                <p>Let's discuss how PaySide can transform your payroll operations</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <img src="520x160logo.png" alt="PaySide Solutions" class="footer-logo">
+                    <p>Professional payroll solutions tailored to your business needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#umbrella-payroll">Umbrella Payroll</a></li>
+                        <li><a href="services.html#tax-compliance">Tax Compliance</a></li>
+                        <li><a href="services.html#expense-management">Expense Management</a></li>
+                        <li><a href="services.html#pension-administration">Pension Administration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@paysidesolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PaySide. All rights reserved.</p>
+                <p class="footer-legal">
+                    <a href="health-safety.html">Health &amp; Safety Policy</a> | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms and Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <h3>This website uses cookies</h3>
+            <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you've provided to them or that they've collected from your use of their services.</p>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <label>
+                        <span>Necessary</span>
+                        <input type="checkbox" id="cookieNecessary" checked disabled>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Preferences</span>
+                        <input type="checkbox" id="cookiePreferences" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Statistics</span>
+                        <input type="checkbox" id="cookieStatistics" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Marketing</span>
+                        <input type="checkbox" id="cookieMarketing" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-buttons">
+                <button id="denyAllCookies" class="cookie-btn deny-btn">Deny</button>
+                <button id="allowSelectionCookies" class="cookie-btn selection-btn">Allow selection</button>
+                <button id="allowAllCookies" class="cookie-btn allow-btn">Allow all</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

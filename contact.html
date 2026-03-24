@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PaySide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="contact-page">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="520x160logo.png" alt="PaySide Solutions" class="logo-img">
+            </div>
+            <div class="hamburger-wrapper" id="hamburgerMenu">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu-text">MENU</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="side-menu-categories">
+                <h2>Categories</h2>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="side-menu-nav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="services.html"><i class="fas fa-briefcase"></i> Services</a>
+            <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We're here to help with all your payroll needs</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-box">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help with all your payroll needs. Contact us today and experience professional payroll solutions.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:support@paysidesolutions.com">support@paysidesolutions.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-reply"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Response Time</h4>
+                                <p>We typically respond within 2-4 hours during business hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00am - 5:00pm<br>
+                                Saturday - Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="userType">I am a: *</label>
+                            <div class="user-type-selector">
+                                <label class="user-type-option">
+                                    <input type="radio" name="userType" value="contractor" id="contractorType">
+                                    <span>Contractor</span>
+                                </label>
+                                <label class="user-type-option">
+                                    <input type="radio" name="userType" value="agency" id="agencyType" checked>
+                                    <span>Agency</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <!-- Agency-specific Fields -->
+                        <div id="agencyFields">
+                            <div class="form-group">
+                                <label for="company">Company Name *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="employees">Number of Employees</label>
+                                    <select id="employees" name="employees">
+                                        <option value="">Select...</option>
+                                        <option value="1-10">1-10</option>
+                                        <option value="11-50">11-50</option>
+                                        <option value="51-100">51-100</option>
+                                        <option value="101-500">101-500</option>
+                                        <option value="500+">500+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Interest</label>
+                                    <select id="service" name="service">
+                                        <option value="">Select...</option>
+                                        <option value="umbrella">Umbrella Payroll</option>
+                                        <option value="tax">Tax Filing & Compliance</option>
+                                        <option value="expenses">Expense Management</option>
+                                        <option value="pension">Pension Administration</option>
+                                        <option value="all">All Services</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contractor-specific Fields -->
+                        <div id="contractorFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="rateOfPay">Rate of Pay</label>
+                                <input type="text" id="rateOfPay" name="rateOfPay" placeholder="e.g. £500/day">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <img src="520x160logo.png" alt="PaySide Solutions" class="footer-logo">
+                    <p>Professional payroll solutions tailored to your business needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#umbrella-payroll">Umbrella Payroll</a></li>
+                        <li><a href="services.html#tax-compliance">Tax Compliance</a></li>
+                        <li><a href="services.html#expense-management">Expense Management</a></li>
+                        <li><a href="services.html#pension-administration">Pension Administration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@paysidesolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PaySide. All rights reserved.</p>
+                <p class="footer-legal">
+                    <a href="health-safety.html">Health &amp; Safety Policy</a> | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms and Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <h3>This website uses cookies</h3>
+            <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you've provided to them or that they've collected from your use of their services.</p>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <label>
+                        <span>Necessary</span>
+                        <input type="checkbox" id="cookieNecessary" checked disabled>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Preferences</span>
+                        <input type="checkbox" id="cookiePreferences" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Statistics</span>
+                        <input type="checkbox" id="cookieStatistics" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Marketing</span>
+                        <input type="checkbox" id="cookieMarketing" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-buttons">
+                <button id="denyAllCookies" class="cookie-btn deny-btn">Deny</button>
+                <button id="allowSelectionCookies" class="cookie-btn selection-btn">Allow selection</button>
+                <button id="allowAllCookies" class="cookie-btn allow-btn">Allow all</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

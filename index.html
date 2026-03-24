@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaySide - Professional Payroll Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="520x160logo.png" alt="PaySide Solutions" class="logo-img">
+            </div>
+            <div class="hamburger-wrapper" id="hamburgerMenu">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu-text">MENU</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="side-menu-categories">
+                <h2>Categories</h2>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="side-menu-nav">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="services.html"><i class="fas fa-briefcase"></i> Services</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <section class="hero" id="heroSection">
+        <div class="hero-slides">
+            <div class="hero-slide active" data-slide="0"></div>
+            <div class="hero-slide" data-slide="1"></div>
+            <div class="hero-slide" data-slide="2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <div class="hero-text-slide active" data-text="0">
+                    <h1>Expert Payroll Umbrella Services</h1>
+                    <p>Comprehensive payroll solutions for contractors and agencies. We handle PAYE, tax compliance, and all administrative tasks so you can focus on your work.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Explore Solutions</a>
+                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-text-slide" data-text="1">
+                    <h1>Tax Filing & Compliance Made Simple</h1>
+                    <p>Stay compliant with HMRC regulations. Our expert team ensures accurate tax calculations, timely submissions, and complete peace of mind.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Explore Solutions</a>
+                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-text-slide" data-text="2">
+                    <h1>Dedicated Support When You Need It</h1>
+                    <p>Personalized customer service with quick response times. Our team is here to answer your questions and support your contracting journey.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Explore Solutions</a>
+                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <h2>Why Choose PaySide</h2>
+                <p>Delivering excellence in payroll management with cutting-edge technology</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Process payroll in minutes, not hours. Our automated systems ensure rapid and accurate calculations every time.</p>
+                </div>
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your data is protected with enterprise-grade encryption and multi-layer security protocols.</p>
+                </div>
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated team of payroll specialists available to assist you whenever you need guidance.</p>
+                </div>
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>Connect effortlessly with your existing HR and accounting systems for unified operations.</p>
+                </div>
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>HMRC Compliant</h3>
+                    <p>Full compliance with all UK tax regulations and HMRC requirements, giving you complete peace of mind.</p>
+                </div>
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Payments</h3>
+                    <p>Receive your payments quickly with our efficient processing system. Same-day payment options available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-item slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" alt="Team Collaboration" loading="lazy">
+                    <div class="showcase-content">
+                        <h3>Collaborative Solutions</h3>
+                        <p>Work seamlessly with your team and our experts</p>
+                    </div>
+                </div>
+                <div class="showcase-item slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Analytics Dashboard" loading="lazy">
+                    <div class="showcase-content">
+                        <h3>Powerful Analytics</h3>
+                        <p>Gain insights with comprehensive reporting tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content slide-in-up">
+                <h2>Ready to Transform Your Payroll?</h2>
+                <p>Experience the difference with PaySide's comprehensive payroll solutions</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <img src="520x160logo.png" alt="PaySide Solutions" class="footer-logo">
+                    <p>Professional payroll solutions tailored to your business needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#umbrella-payroll">Umbrella Payroll</a></li>
+                        <li><a href="services.html#tax-compliance">Tax Compliance</a></li>
+                        <li><a href="services.html#expense-management">Expense Management</a></li>
+                        <li><a href="services.html#pension-administration">Pension Administration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@paysidesolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PaySide. All rights reserved.</p>
+                <p class="footer-legal">
+                    <a href="health-safety.html">Health &amp; Safety Policy</a> | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms and Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <h3>This website uses cookies</h3>
+            <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you've provided to them or that they've collected from your use of their services.</p>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <label>
+                        <span>Necessary</span>
+                        <input type="checkbox" id="cookieNecessary" checked disabled>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Preferences</span>
+                        <input type="checkbox" id="cookiePreferences" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Statistics</span>
+                        <input type="checkbox" id="cookieStatistics" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <span>Marketing</span>
+                        <input type="checkbox" id="cookieMarketing" checked>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-buttons">
+                <button id="denyAllCookies" class="cookie-btn deny-btn">Deny</button>
+                <button id="allowSelectionCookies" class="cookie-btn selection-btn">Allow selection</button>
+                <button id="allowAllCookies" class="cookie-btn allow-btn">Allow all</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
