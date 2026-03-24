@@ -43,20 +43,6 @@
     </div>
     <div class="menu-overlay" id="menuOverlay"></div>
 
-    <!-- Hidden form for Netlify detection -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="userType" />
-        <input type="text" name="firstName" />
-        <input type="text" name="lastName" />
-        <input type="email" name="email" />
-        <input type="tel" name="phone" />
-        <input type="text" name="company" />
-        <input type="text" name="employees" />
-        <input type="text" name="service" />
-        <input type="text" name="rateOfPay" />
-        <textarea name="message"></textarea>
-    </form>
-
     <section class="page-hero contact-page">
         <div class="container">
             <h1>Get In Touch</h1>
@@ -107,8 +93,7 @@
 
                 <div class="contact-form-box">
                     <h2>Send Us a Message</h2>
-                    <form id="contactForm" class="contact-form" name="contact" method="POST" action="/thank-you.html">
-                        <input type="hidden" name="form-name" value="contact">
+                    <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <label for="userType">I am a: *</label>
                             <div class="user-type-selector">

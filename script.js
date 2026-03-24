@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const sideMenu = document.getElementById('sideMenu');
     const closeMenu = document.getElementById('closeMenu');
     const menuOverlay = document.getElementById('menuOverlay');
-    const contactForm = document.getElementById('contactForm');
 
     function openMenu() {
         sideMenu.classList.add('active');
@@ -276,4 +275,59 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Contact Form Submission via Zapier Webhook
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            
+            // Collect form data
+            const formData = {
+                userType: document.querySelector('input[name="userType"]:checked')?.value || '',
+                firstName: document.getElementById('firstName')?.value || '',
+                lastName: document.getElementById('lastName')?.value || '',
+                email: document.getElementById('email')?.value || '',
+                phone: document.getElementById('phone')?.value || '',
+                company: document.getElementById('company')?.value || '',
+                employees: document.getElementById('employees')?.value || '',
+                service: document.getElementById('service')?.value || '',
+                rateOfPay: document.getElementById('rateOfPay')?.value || '',
+                message: document.getElementById('message')?.value || '',
+                timestamp: new Date().toISOString(),
+                source: 'PaySide Solutions Website'
+            };
+            
+            try {
+                // Replace this URL with your Zapier webhook URL
+                const zapierWebhookUrl = 'YOUR_ZAPIER_WEBHOOK_URL_HERE';
+                
+                const response = await fetch(zapierWebhookUrl, {
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                });
+                
+                if (response.ok || response.status === 200) {
+                    // Redirect to thank you page
+                    window.location.href = '/thank-you.html';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('There was an error sending your message. Please try again or email us directly at support@paysidesolutions.com');
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+    }
 });
