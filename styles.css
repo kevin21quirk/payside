@@ -1818,6 +1818,7 @@ body:has(a[href="contact.html"].active) .page-hero::before,
     display: flex;
     align-items: center;
     padding: 6rem 0;
+    margin-top: 120px;
     background: linear-gradient(135deg, var(--navy-blue) 0%, #1A3A6B 100%);
 }
 
