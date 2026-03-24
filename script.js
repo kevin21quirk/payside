@@ -125,37 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const formData = new FormData(contactForm);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
-
-            console.log('Form submitted:', data);
-
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.innerHTML;
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitButton.disabled = true;
-
-            setTimeout(() => {
-                submitButton.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                
-                setTimeout(() => {
-                    contactForm.reset();
-                    submitButton.innerHTML = originalButtonText;
-                    submitButton.disabled = false;
-                    
-                    alert('Thank you for your message! We will get back to you within 24 hours.');
-                }, 1500);
-            }, 1500);
-        });
-    }
-
     const header = document.querySelector('.header');
     let lastScroll = 0;
 
