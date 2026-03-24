@@ -2190,37 +2190,37 @@ body:has(a[href="contact.html"].active) .page-hero::before,
     }
 
     .logo {
-        padding: 0.7rem 3.5rem;
+        padding: 0.4rem 1.5rem;
     }
 
     .header.scrolled .logo {
-        padding: 0.5rem 2.5rem;
+        padding: 0.3rem 1rem;
     }
 
     .logo-img {
-        width: 280px;
+        width: 180px;
     }
 
     .header.scrolled .logo-img {
-        width: 240px;
+        width: 160px;
     }
 
     .hamburger-wrapper {
-        right: 1rem;
-        padding: 0.8rem 1rem;
+        right: 0.5rem;
+        padding: 0.5rem 0.7rem;
     }
 
     .nav-container {
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 0.5rem;
     }
 
     .hamburger-menu span {
-        width: 35px;
-        height: 3.5px;
+        width: 28px;
+        height: 3px;
     }
 
     .menu-text {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
