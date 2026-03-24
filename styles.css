@@ -2220,7 +2220,11 @@ body:has(a[href="contact.html"].active) .page-hero::before,
     }
 
     .menu-text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .side-menu-categories {
+        display: none;
     }
 }
 
