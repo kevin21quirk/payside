@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             try {
-                // Replace this URL with your Zapier webhook URL
-                const zapierWebhookUrl = 'YOUR_ZAPIER_WEBHOOK_URL_HERE';
+                // Zapier webhook URL for contact form submissions
+                const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/19690637/uppzarc/';
                 
                 const response = await fetch(zapierWebhookUrl, {
                     method: 'POST',
