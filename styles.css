@@ -262,9 +262,8 @@ body {
 
 .close-menu {
     position: absolute;
-    top: 50%;
-    right: 1.5rem;
-    transform: translateY(-50%);
+    top: 0.5rem;
+    right: 0.5rem;
     background: rgba(255, 255, 255, 0.95);
     border: none;
     font-size: 1.8rem;
@@ -283,7 +282,7 @@ body {
 }
 
 .close-menu:hover {
-    transform: translateY(-50%) rotate(90deg) scale(1.1);
+    transform: rotate(90deg) scale(1.1);
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
@@ -2227,36 +2226,48 @@ body:has(a[href="contact.html"].active) .page-hero::before,
 /* Landscape mobile view - horizontal orientation */
 @media (max-width: 768px) and (max-height: 500px) {
     .logo-img {
-        width: 200px;
+        width: 140px;
     }
 
     .header.scrolled .logo-img {
-        width: 180px;
+        width: 120px;
     }
 
     .logo {
-        padding: 0.5rem 2rem;
+        padding: 0.3rem 1rem;
     }
 
     .header.scrolled .logo {
-        padding: 0.3rem 1.5rem;
+        padding: 0.2rem 0.8rem;
     }
 
     .hamburger-wrapper {
-        right: 0.5rem;
-        padding: 0.6rem 0.8rem;
+        right: 0.3rem;
+        padding: 0.4rem 0.6rem;
     }
 
     .nav-container {
-        padding: 0.3rem 0.5rem;
+        padding: 0.2rem 0.3rem;
     }
 
     .hamburger-menu span {
-        width: 30px;
-        height: 3px;
+        width: 25px;
+        height: 2.5px;
     }
 
     .menu-text {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+    }
+
+    .hero {
+        margin-top: 90px;
+        min-height: calc(100vh - 90px);
+        padding-top: 2rem;
+    }
+
+    .page-hero {
+        margin-top: 90px;
+        min-height: 200px;
+        padding-top: 2rem;
     }
 }
