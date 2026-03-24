@@ -18,6 +18,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 * {
@@ -32,6 +34,8 @@ body {
     color: var(--grey-dark);
     background-color: var(--white);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .container {
@@ -1761,6 +1765,19 @@ body:has(a[href="contact.html"].active) .page-hero::before,
         gap: 2rem;
     }
 
+    .contact-info-box {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section {
+        overflow-x: hidden;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
     .contact-form .form-row {
         grid-template-columns: 1fr;
         gap: 0;
@@ -2181,16 +2198,20 @@ body:has(a[href="contact.html"].active) .page-hero::before,
     }
 
     .logo-img {
-        width: 400px;
+        width: 280px;
     }
 
     .header.scrolled .logo-img {
-        width: 320px;
+        width: 240px;
     }
 
     .hamburger-wrapper {
-        right: 1.5rem;
-        padding: 1rem 1.2rem;
+        right: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-container {
+        padding: 0.5rem 1rem;
     }
 
     .hamburger-menu span {
